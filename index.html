@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DigiLocker Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <link rel="icon" href="https://www.digilocker.gov.in/assets/images/logo.png" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #003366, #006699);
+        font-family: 'Segoe UI', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        color: white;
+      }
 
+      h1 {
+        margin-top: 10px;
+        font-size: 24px;
+      }
+
+      .logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      df-messenger {
+        --df-messenger-bot-message: #e3f2fd;
+        --df-messenger-button-titlebar-color: #1976d2;
+        --df-messenger-chat-background-color: #ffffff;
+        --df-messenger-font-color: #000000;
+        --df-messenger-user-message: #bbdefb;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="https://www.digilocker.gov.in/assets/images/logo.png" alt="DigiLocker Logo" />
+    <h1>DigiLocker Support Chatbot</h1>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="DigiLockerBot"
+      agent-id="3b8a3ba2-987b-493c-bf3f-f88bd663a705"
+      language-code="en"
+    ></df-messenger>
+  </body>
+</html>
